@@ -8,3 +8,5 @@ staticfiles/
 # Virtual environment
 venv/
 .env
+
+.DS_Store

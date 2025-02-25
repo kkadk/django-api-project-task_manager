@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
-    'corsheaders',
+    # 'corsheaders', # For Frontend Integration
     'tasks',
 ]
 
@@ -60,7 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
+    # 'corsheaders.middleware.CorsMiddleware', # For Frontend Integration
 ]
 
 ROOT_URLCONF = 'task_manager.urls'
@@ -148,6 +148,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # In your settings.py
 CSRF_TRUSTED_ORIGINS = ['http://localhost:8000']
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",  # The URL of your React app
-]
+# For Frontend Integration
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:3000",  # The URL of your React app
+# ]

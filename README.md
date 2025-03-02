@@ -69,7 +69,7 @@ python manage.py runserver
      To register a new user, send a POST request to [http://127.0.0.1:8000/api/register/](http://127.0.0.1:8000/api/register/)
    
    - **Verify Email:**  
-     To verify the user's email, send a GET request to [http://127.0.0.1:8000/api/verify-email/<token>/](http://127.0.0.1:8000/api/verify-email/<token>/)  
+     To verify the user's email, send a GET request to [http://127.0.0.1:8000/api/verify-email/&lt;token&gt;/](http://127.0.0.1:8000/api/verify-email/&lt;token&gt;/)  
      Replace `<token>` with the actual verification token received in the registration email.
 
 ### 3. **Token Authentication:**

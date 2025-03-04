@@ -33,7 +33,7 @@ class RegisterUserView(APIView):
             
             # Generate email confirmation token
             token = jwt.encode(
-                {"user_id": user.id, "exp": datetime.datetime.utcnow() + datetime.timedelta(hours=24)},
+                {"user_id": user.id, "exp": datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=24)},
                 settings.SECRET_KEY,
                 algorithm="HS256"
             )

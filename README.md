@@ -53,13 +53,15 @@ pip install -r requirements.txt
 python manage.py shell
 ```
 ```
-# you will see a python shell running in your terminal, copy the following commands one by one and press enter.
+# you will see a python shell running in your terminal, copy the following commands
+# one by one and press enter.
 #first command 
 from django.core.management.utils import get_random_secret_key
 ```
 ```
 #second command
-secret_key = get_random_secret_key() # this will generate a random secret key, make sure to copy it.
+secret_key = get_random_secret_key() # this will generate a random secret key
+#make sure to copy it.
 ```
 
 7. Create a .env file in the root directory:
@@ -68,7 +70,8 @@ touch .env
 ```
 8. Add the previously generated secret key to the .env file:
 ```
-DJANGO_SECRET_KEY=your-generated-secret-key-here # replace with your generated secret key and make sure it is inside quotations.
+DJANGO_SECRET_KEY=your-generated-secret-key-here 
+# replace it with your generated secret key and make sure it is inside quotations.
 ```
 
 ##  Apply Migrations:
